@@ -12,10 +12,10 @@ sudo npm install git://github.com/shallker-wang/modular.git -g
 Go to your project, run the command `modular` to bundle all the modules to a single .js file:
 ```
 cd my-project
-modular
+modular build application.js
 ```
 
-It will build an application.js for you, ready to run on browser:
+It will build a file application.js for you, ready to be included in HTML and run on browser:
 ```html
 <script src="application.js"></script>
 ```
@@ -75,16 +75,15 @@ module.exports = bar;
 
 ## Command
 ```bash
-
 Usage: modular [options]
 
 Options:
 
-  -h, --help        output usage information
-  -V, --version     output the version number
-  -c --compress     Compress javascript
-  -f --file [name]  Specify the build package file name
-
+  -h, --help         output usage information
+  -V, --version      output the version number
+  -c --compress      Compress javascript
+  -f --file [name]   Specify the build package file name
+  -b --build [name]  Bundle all the modules to one file
 ```
 
 ## Todo
