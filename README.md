@@ -89,5 +89,5 @@ Options:
 ## Todo
 - ~~coffeescript support~~
 - ~~compress support~~
-- relative path start with '.' support
+- ~~relative path start with './' support~~
 - up path '..' support
