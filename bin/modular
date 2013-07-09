@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+/* modular command line interface */
+var command = require('commander');
+var Modular = require('../lib/modular');
+
+command
+  .version('0.1.0')
+  .option('-c --compress', 'Compress javascript')
+  .option('-f --file [name]', 'Specify the build package file name')
+  .parse(process.argv);
+
+if (command.compress) {
+  Modular.set('compress', true);
+}
+
+if (command.file) {
+  Modular.set('file', command.file);
+}
+
+Modular.build()

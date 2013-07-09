@@ -1,0 +1,17 @@
+{
+  "name": "modular",
+  "description": "Client side module system.",
+  "version": "0.1.0",
+  "author": "Shallker Wang <shallker.wang@profero.com>",
+  "main": "index",
+  "bin": {
+    "modular": "./bin/modular"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shallker-wang/modular.git"  
+  },
+  "dependencies": {
+    "commander": "*"
+  }
+}
