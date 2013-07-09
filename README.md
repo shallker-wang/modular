@@ -90,4 +90,4 @@ Options:
 - ~~coffeescript support~~
 - ~~compress support~~
 - ~~relative path start with './' support~~
-- up path '..' support
+- ~~up path '../' support~~
