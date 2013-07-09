@@ -83,7 +83,7 @@ Options:
   -V, --version      output the version number
   -c --compress      Compress javascript
   -f --file [name]   Specify the build package file name
-  -b --build [name]  Bundle all the modules to one file
+  -b --build [name]  Bundle all the modules into one file
 ```
 
 ## Todo

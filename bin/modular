@@ -8,7 +8,7 @@ command
   .version('0.1.0')
   .option('-c --compress', 'Compress javascript')
   .option('-f --file [name]', 'Specify the build package file name')
-  .option('-b --build [name]', 'Bundle all the modules to one file')
+  .option('-b --build [name]', 'Bundle all the modules into one file')
   .parse(process.argv);
 
 if (command.compress) {
