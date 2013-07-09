@@ -21,7 +21,7 @@ It will build an `application.js` for you, ready to run on browser
 ```
 
 After `application.js`, start requiring your modules
-```
+```html
 <script>
   var app = require('app');
   var foo = require('inc/foo');
