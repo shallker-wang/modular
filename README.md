@@ -9,18 +9,18 @@ sudo npm install git://github.com/shallker-wang/modular.git -g
 ```
 
 ## Quick Start
-Go to your project, run the command `modular` to bundle all the modules to a single `.js` file:
+Go to your project, run the command `modular` to bundle all the modules to a single .js file:
 ```
 cd my-project
 modular
 ```
 
-It will build an `application.js` for you, ready to run on browser:
+It will build an application.js for you, ready to run on browser:
 ```html
 <script src="application.js"></script>
 ```
 
-After `application.js`, start requiring your modules:
+After application.js, start requiring your modules:
 ```html
 <script>
   // relatively require
@@ -31,7 +31,7 @@ After `application.js`, start requiring your modules:
 ```
 
 ## Define a module afterwards
-Define a module after `application.js` is included, `define(path, function(exports, require, module) {/* your module */})`:
+Define a module after application.js is included, `define(path, function(exports, require, module) {/* your module */})`:
 ```html
 <script src="application.js"></script>
 <script>
