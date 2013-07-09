@@ -87,7 +87,7 @@ Options:
 ```
 
 ## Todo
-- coffeescript support
-- compress support
+- ~~coffeescript support~~
+- ~~compress support~~
 - relative path start with '.' support
 - up path '..' support
