@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "commander": "*",
-    "coffee-script": "*"
+    "coffee-script": "*",
+    "uglify-js": "*"
   }
 }
