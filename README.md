@@ -1,7 +1,7 @@
 modular
 ==========
 
-Client side module system.
+Module system on the client side.
 
 ## Installation
 ```
@@ -23,8 +23,24 @@ It will build an `application.js` for you, ready to run on browser:
 After `application.js`, start requiring your modules:
 ```html
 <script>
+  // relatively require
   var app = require('app');
-  var foo = require('inc/foo');
+  // absolutely require
+  var foo = require('/inc/foo');
+</script>
+```
+
+## Define a module afterwards
+Define a module after `application.js` is included, `define(path, function(exports, require, module) {/* your module */})`:
+```html
+<script src="application.js"></script>
+<script>
+  define('/inc/my', function(exports, require, module) {
+    var foo = require('foo');
+    var my = [foo, 'my'];
+    module.exports = my;
+  });
+  var my = require('inc/my');
 </script>
 ```
 
@@ -55,6 +71,20 @@ inc/bar.js
 var foo = require('foo');
 var bar = foo + 'world';
 module.exports = bar;
+```
+
+## Command
+```bash
+
+Usage: modular [options]
+
+Options:
+
+  -h, --help        output usage information
+  -V, --version     output the version number
+  -c --compress     Compress javascript
+  -f --file [name]  Specify the build package file name
+
 ```
 
 ## Todo
