@@ -12,6 +12,7 @@
     "url": "https://github.com/shallker-wang/modular.git"  
   },
   "dependencies": {
-    "commander": "*"
+    "commander": "*",
+    "coffee-script": "*"
   }
 }
