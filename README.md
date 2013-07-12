@@ -91,3 +91,5 @@ Options:
 - ~~compress support~~
 - ~~relative path start with './' support~~
 - ~~up path '../' support~~
+- set root
+- ~~add watch~~
