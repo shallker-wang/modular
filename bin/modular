@@ -12,20 +12,20 @@ command
   .option('-b --build [name]', 'Bundle all the modules into one file')
   .parse(process.argv);
 
-if (command.watch) {
-  Modular.set('watch', true);
+if (command.output) {
+  Modular.set('output', command.output);
 }
 
 if (command.compress) {
   Modular.set('compress', true);
 }
 
-if (command.output) {
-  Modular.set('output', command.output);
-}
-
 if (command.file) {
   Modular.set('file', command.file);
+}
+
+if (command.watch) {
+  Modular.set('watch', true);
 }
 
 if (command.build) {
