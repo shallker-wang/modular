@@ -9,9 +9,9 @@ sudo npm install git://github.com/shallker-wang/modular.git -g
 ```
 
 ## Quick Start
-Go to your project, run the command `modular` to bundle all the modules to a single .js file:
+Go to your app, run the command `modular build` to bundle all the modules into a single .js file:
 ```
-cd my-project
+cd my-app
 modular build application.js
 ```
 
@@ -23,11 +23,22 @@ It will build a file application.js for you, ready to be included in HTML and ru
 After application.js, start requiring your modules:
 ```html
 <script>
-  // relatively require
   var app = require('app');
-  // absolutely require
-  var foo = require('/inc/foo');
+  new app();
 </script>
+```
+
+## Require
+Absolutely require, start with a forward slash
+```javascript
+var foo = require('/lib/foo');
+```
+
+Relatively require, start with `./`, `../` or module file name directly if they're in the same folder
+```javascript
+var bar = require('foo');
+var bar = require('./foo');
+var bar = require('../foo');
 ```
 
 ## Define a module afterwards
