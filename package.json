@@ -1,9 +1,12 @@
 {
   "name": "modular",
   "description": "Client side module system.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Shallker Wang <shallker.wang@profero.com>",
-  "main": "index",
+  "main": "index.js",
+  "keywords": [
+    "modular", "module", "require", "requirejs"
+  ],
   "bin": {
     "modular": "./bin/modular"  
   },
@@ -11,9 +14,16 @@
     "type": "git",
     "url": "https://github.com/shallker-wang/modular.git"  
   },
+  "bugs": {
+    "url": "https://github.com/shallker-wang/modular/issues"
+  },
   "dependencies": {
     "commander": "*",
     "coffee-script": "*",
     "uglify-js": "*"
-  }
+  },
+  "scripts": {
+    "test": "mocha --recursive --compilers coffee:coffee-script -r should"
+  },
+  "license": "MIT"
 }
