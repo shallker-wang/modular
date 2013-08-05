@@ -31,7 +31,6 @@ if (command.output) {
 
 if (command.build) {
   var path = typeof command.build === 'string' ? command.build : './';
-  console.log('command.build', command.build);
   return Modular.build(path)
 }
 
