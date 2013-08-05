@@ -6,14 +6,15 @@ var Modular = require('../lib/modular');
 
 command
   .version('0.1.0')
-  .option('-w --watch', 'Watch files')
-  .option('-c --compress', 'Compress javascript')
+  .option('-w --watch', 'Watch file changes and trigger build')
+  .option('-c --compress', 'Compress javascript in build')
+  .option('-f --file [name]', 'Specify the build file name')
   .option('-o --output [path]', 'Output path')
-  .option('-b --build [name]', 'Bundle all the modules into one file')
+  .option('-b --build [path]', 'Bundle all the modules into one file')
   .parse(process.argv);
 
-if (command.output) {
-  Modular.set('output', command.output);
+if (command.watch) {
+  Modular.set('watch', true);
 }
 
 if (command.compress) {
@@ -24,17 +25,14 @@ if (command.file) {
   Modular.set('file', command.file);
 }
 
-if (command.watch) {
-  Modular.set('watch', true);
+if (command.output) {
+  Modular.set('output', command.output);
 }
 
 if (command.build) {
-  var name;
-  name = typeof command.build === 'string' ? command.build : command.build[0];
-  if (name !== undefined) {
-    Modular.set('file', name);
-  }
-  return Modular.build()
+  var path = typeof command.build === 'string' ? command.build : './';
+  console.log('command.build', command.build);
+  return Modular.build(path)
 }
 
 command.help()
