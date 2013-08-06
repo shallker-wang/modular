@@ -3,6 +3,7 @@ modular-js
 
 Module system on the client side.
 
+[![Build Status](https://drone.io/github.com/shallker-wang/modular-js/status.png)](https://drone.io/github.com/shallker-wang/modular-js/latest)
 
 ## Installation
 ```
