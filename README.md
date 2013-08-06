@@ -133,6 +133,26 @@ Options:
 ```
 
 
+## Module API
+### set(name, value)
+Modular option setter.
+
+```javascript
+var modular = require('modular-js');
+modular.set('watch', true);
+modular.set('root', './app/');
+modular.set('output', '../');
+modular.set('file', 'app.js');
+```
+
+### build(path = './')
+Set path as root folder then bundle all the modules from the path.
+
+```javascript
+modular.build('./app/');
+```
+
+
 ## Todo
 - ~~coffeescript support~~
 - ~~compress support~~
