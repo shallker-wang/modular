@@ -2,7 +2,7 @@
 
 /* modular command line interface */
 var command = require('commander');
-var Modular = require('../lib/modular');
+var Modular = require('../index');
 
 command
   .version('0.1.0')
