@@ -6,7 +6,7 @@ Module system on the client side.
 
 ## Installation
 ```
-sudo npm install git://github.com/shallker-wang/modular-js.git -g
+sudo npm install modular-js -g
 ```
 
 
@@ -137,7 +137,7 @@ Options:
 - ~~compress support~~
 - ~~relative path start with './' support~~
 - ~~up path '../' support~~
-- set root
+- ~~set root~~
 - ~~add watch~~
 
 
