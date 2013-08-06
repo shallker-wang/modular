@@ -1,6 +1,6 @@
 var Modular = require('./lib/modular');
 
-exports.version = '1.0.0';
+exports.version = '1.1.0';
 
 /* export Modular setter */
 exports.set = function(name, value) {
