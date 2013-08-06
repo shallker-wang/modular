@@ -1,4 +1,4 @@
-modular
+modular-js
 ==========
 
 Module system on the client side.
@@ -6,7 +6,7 @@ Module system on the client side.
 
 ## Installation
 ```
-sudo npm install git://github.com/shallker-wang/modular.git -g
+sudo npm install git://github.com/shallker-wang/modular-js.git -g
 ```
 
 

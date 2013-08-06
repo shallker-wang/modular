@@ -1,21 +1,21 @@
 {
-  "name": "modular",
-  "description": "Client side module system.",
+  "name": "modular-js",
+  "description": "Modular JavaScript.",
   "version": "1.0.0",
   "author": "Shallker Wang <shallker.wang@profero.com>",
   "main": "index.js",
   "keywords": [
-    "modular", "module", "require", "requirejs"
+    "modular-js", "modular", "module", "require", "requirejs"
   ],
   "bin": {
     "modular": "./bin/modular"  
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shallker-wang/modular.git"  
+    "url": "https://github.com/shallker-wang/modular-js.git"  
   },
   "bugs": {
-    "url": "https://github.com/shallker-wang/modular/issues"
+    "url": "https://github.com/shallker-wang/modular-js/issues"
   },
   "dependencies": {
     "commander": "*",
