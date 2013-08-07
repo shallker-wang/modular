@@ -5,7 +5,7 @@ var command = require('commander');
 var Modular = require('../index');
 
 command
-  .version('0.1.0')
+  .version(Modular.version)
   .option('-w --watch', 'Watch file changes and trigger build')
   .option('-c --compress', 'Compress javascript in build')
   .option('-f --file [name]', 'Specify the build file name')
